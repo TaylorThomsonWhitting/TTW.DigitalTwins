@@ -463,6 +463,22 @@
   "hideBranding": false,
   "baseMaps": {
     "defaultBaseMapId": "basemap-positron",
-    "previewBaseMapId": "basemap-positron"
+    "previewBaseMapId": "basemap-positron",
+    "enabledBaseMaps": [
+      "basemap-microsoft-base-road",
+      "basemap-microsoft-imagery",
+      "basemap-positron"
+    ],
+    "items": [
+      {
+        "item": {
+          "id": "basemap-microsoft-imagery",
+          "name": "Satellite",
+          "type": "url-template-imagery",
+          "url": "https://ttwdigitaltwinsfunctions.azurewebsites.net/AzureMap?x={x}&y={y}&zoom={z}"
+        },
+        "image": "images/basemaps/AzureMap.png"
+      }
+    ]
   }
 }
